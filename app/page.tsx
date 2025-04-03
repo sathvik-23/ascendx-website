@@ -18,7 +18,7 @@ export default function Home() {
     { text: 'Optimize' },
     { text: 'Ascend' },
     { text: 'With', className: 'text-primary' },
-    { text: 'AscendX', className: 'text-primary font-bold' },
+    { text: 'AIVARA', className: 'text-primary font-bold' },
   ]
 
   const services = [
@@ -88,7 +88,7 @@ export default function Home() {
           <div className="flex flex-col items-center space-y-4 text-center">
             <div className="space-y-2">
               <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
-                Welcome to AscendX
+                Welcome to AIVARA
               </h1>
               <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
                 Transform your digital presence with cutting-edge website and
@@ -122,7 +122,7 @@ export default function Home() {
                 Elevate Your Business with AI-Powered Insights
               </h2>
               <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-                At AscendX, we believe every business deserves a competitive
+                At AIVARA, we believe every business deserves a competitive
                 edge. We combine creative design with advanced technology to
                 help you grow—whether you're looking to build a sleek website, a
                 robust mobile app, or gain actionable insights through
@@ -170,7 +170,7 @@ export default function Home() {
       </section>
 
       {/* Our Work Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/30">
+      {/* <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/30">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
@@ -208,7 +208,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Stats Section */}
       <CounterSection />

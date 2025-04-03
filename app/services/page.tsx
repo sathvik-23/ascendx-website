@@ -1,64 +1,64 @@
-import Link from "next/link"
-import { ArrowRight } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { ServiceCard } from "@/components/ui/service-card"
+import Link from 'next/link'
+import { ArrowRight } from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import { ServiceCard } from '@/components/ui/service-card'
 
 export default function ServicesPage() {
   const webAppServices = [
     {
-      title: "Website Building",
+      title: 'Website Building',
       description:
         "Custom-designed, responsive websites that capture your brand's essence. We focus on seamless user experiences and search engine optimization.",
-      icon: "🌐",
+      icon: '🌐',
     },
     {
-      title: "App Building",
+      title: 'App Building',
       description:
-        "Develop modern, intuitive mobile and web applications tailored to your business needs. Our apps are built for scalability and performance.",
-      icon: "📱",
+        'Develop modern, intuitive mobile and web applications tailored to your business needs. Our apps are built for scalability and performance.',
+      icon: '📱',
     },
   ]
 
   const businessServices = [
     {
-      title: "Sales Lead",
+      title: 'Sales Lead',
       description:
-        "Gain a real-time, centralized view of your business performance. Utilize AI insights to drive strategic growth and optimize sales tactics.",
-      icon: "💼",
+        'Gain a real-time, centralized view of your business performance. Utilize AI insights to drive strategic growth and optimize sales tactics.',
+      icon: '💼',
     },
     {
-      title: "Marketing Lead",
+      title: 'Marketing Lead',
       description:
-        "Use AI-powered analytics to understand customer behavior, identify microsegments, and create campaigns that convert.",
-      icon: "📣",
+        'Use AI-powered analytics to understand customer behavior, identify microsegments, and create campaigns that convert.',
+      icon: '📣',
     },
     {
-      title: "Sales Strategist",
+      title: 'Sales Strategist',
       description:
-        "Leverage AI to optimize pricing, promotions, and product strategies based on real-time sales trends and customer insights.",
-      icon: "📊",
+        'Leverage AI to optimize pricing, promotions, and product strategies based on real-time sales trends and customer insights.',
+      icon: '📊',
     },
   ]
 
   const analyticalServices = [
     {
-      title: "Data Analyst",
+      title: 'Data Analyst',
       description:
-        "Automate data processing and extract key insights effortlessly, eliminating the need for time-consuming manual reporting.",
-      icon: "📈",
+        'Automate data processing and extract key insights effortlessly, eliminating the need for time-consuming manual reporting.',
+      icon: '📈',
     },
     {
-      title: "Finance Lead",
+      title: 'Finance Lead',
       description:
-        "Utilize AI-driven financial insights to forecast revenue, manage cash flow, and optimize spending for maximum profitability.",
-      icon: "💰",
+        'Utilize AI-driven financial insights to forecast revenue, manage cash flow, and optimize spending for maximum profitability.',
+      icon: '💰',
     },
     {
-      title: "Digital Creator",
+      title: 'Digital Creator',
       description:
-        "Transform data insights into engaging, hyper-personalized campaigns using generative AI, ensuring your message resonates with your target audience.",
-      icon: "🎨",
+        'Transform data insights into engaging, hyper-personalized campaigns using generative AI, ensuring your message resonates with your target audience.',
+      icon: '🎨',
     },
   ]
 
@@ -69,10 +69,13 @@ export default function ServicesPage() {
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center space-y-4 text-center">
             <div className="space-y-2">
-              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">Our Services</h1>
+              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
+                Our Services
+              </h1>
               <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-                At AscendX, we offer a comprehensive suite of services designed to help your business scale and succeed.
-                Discover our core offerings below:
+                At AIVARA, we offer a comprehensive suite of services designed
+                to help your business scale and succeed. Discover our core
+                offerings below:
               </p>
             </div>
           </div>
@@ -85,8 +88,12 @@ export default function ServicesPage() {
           <Tabs defaultValue="webApp" className="w-full">
             <TabsList className="grid w-full grid-cols-3 mb-12">
               <TabsTrigger value="webApp">Website & App Building</TabsTrigger>
-              <TabsTrigger value="business">Strategic Business Solutions</TabsTrigger>
-              <TabsTrigger value="analytical">Analytical & Creative Services</TabsTrigger>
+              <TabsTrigger value="business">
+                Strategic Business Solutions
+              </TabsTrigger>
+              <TabsTrigger value="analytical">
+                Analytical & Creative Services
+              </TabsTrigger>
             </TabsList>
 
             <TabsContent value="webApp" className="space-y-8">
@@ -140,7 +147,8 @@ export default function ServicesPage() {
                 Ready to elevate your business?
               </h2>
               <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-                Contact us today to discuss how we can tailor these solutions to your unique needs.
+                Contact us today to discuss how we can tailor these solutions to
+                your unique needs.
               </p>
             </div>
             <Button asChild size="lg" className="group">
@@ -155,4 +163,3 @@ export default function ServicesPage() {
     </main>
   )
 }
-

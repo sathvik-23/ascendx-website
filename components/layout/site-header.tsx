@@ -1,35 +1,35 @@
-"use client"
+'use client'
 
-import Link from "next/link"
-import { usePathname } from "next/navigation"
-import { Menu } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { ThemeToggle } from "@/components/theme-toggle"
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+import { Menu } from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
+import { ThemeToggle } from '@/components/theme-toggle'
 
 export function SiteHeader() {
   const pathname = usePathname()
 
   const routes = [
     {
-      href: "/",
-      label: "Home",
-      active: pathname === "/",
+      href: '/',
+      label: 'Home',
+      active: pathname === '/',
     },
     {
-      href: "/services",
-      label: "Services",
-      active: pathname === "/services",
+      href: '/services',
+      label: 'Services',
+      active: pathname === '/services',
     },
     {
-      href: "/about",
-      label: "About",
-      active: pathname === "/about",
+      href: '/about',
+      label: 'About',
+      active: pathname === '/about',
     },
     {
-      href: "/contact",
-      label: "Contact",
-      active: pathname === "/contact",
+      href: '/contact',
+      label: 'Contact',
+      active: pathname === '/contact',
     },
   ]
 
@@ -38,14 +38,18 @@ export function SiteHeader() {
       <div className="container flex h-16 items-center">
         <div className="mr-4 flex">
           <Link href="/" className="flex items-center space-x-2">
-            <span className="text-2xl font-bold text-primary">AscendX</span>
+            <span className="text-2xl font-bold text-primary">AIVARA</span>
           </Link>
         </div>
         <div className="flex flex-1 items-center justify-end space-x-4">
           <nav className="flex items-center space-x-2">
             <div className="hidden md:flex items-center space-x-1">
               {routes.map((route) => (
-                <Button key={route.href} variant={route.active ? "default" : "ghost"} asChild>
+                <Button
+                  key={route.href}
+                  variant={route.active ? 'default' : 'ghost'}
+                  asChild
+                >
                   <Link href={route.href}>{route.label}</Link>
                 </Button>
               ))}
@@ -63,7 +67,7 @@ export function SiteHeader() {
                   {routes.map((route) => (
                     <Button
                       key={route.href}
-                      variant={route.active ? "default" : "ghost"}
+                      variant={route.active ? 'default' : 'ghost'}
                       className="justify-start"
                       asChild
                     >
@@ -79,4 +83,3 @@ export function SiteHeader() {
     </header>
   )
 }
-
