@@ -95,8 +95,11 @@ export default function Home() {
                 app development, enhanced by AI-driven strategic insights.
               </p>
             </div>
-            <div className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl">
+            {/* <div className="w-full px-4 sm:px-6 md:px-8 mx-auto max-w-[90%] sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl">
               <TypewriterEffect words={words} className="py-8" />
+            </div> */}
+            <div className="inline-flex flex-wrap items-center gap-2">
+              <TypewriterEffect words={words} />
             </div>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg" className="group">

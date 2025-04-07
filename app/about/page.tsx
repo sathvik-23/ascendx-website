@@ -86,11 +86,11 @@ export default function AboutPage() {
           <div className="flex flex-col items-center space-y-4 text-center">
             <div className="space-y-2">
               <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
-                About AscendX
+                About AIVARA
               </h1>
               <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
                 Founded on the belief that technology and creativity can change
-                the game for businesses, AscendX is dedicated to delivering
+                the game for businesses, AIVARA is dedicated to delivering
                 innovative digital solutions.
               </p>
             </div>
@@ -106,7 +106,7 @@ export default function AboutPage() {
               <h2 className="text-3xl font-bold tracking-tighter">Our Story</h2>
               <p className="text-gray-500 dark:text-gray-400">
                 Founded on the belief that technology and creativity can change
-                the game for businesses, AscendX is dedicated to delivering
+                the game for businesses, AIVARA is dedicated to delivering
                 innovative digital solutions. We combine expertise in website
                 and app development with advanced AI analytics to help our
                 clients achieve sustainable growth.
