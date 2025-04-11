@@ -16,7 +16,7 @@ export default function Home() {
   const words = [
     { text: 'Innovate' },
     { text: 'Optimize' },
-    { text: 'Ascend' },
+    // { text: 'Ascend' },
     { text: 'With', className: 'text-primary' },
     { text: 'AIVARA', className: 'text-primary font-bold' },
   ]
@@ -98,8 +98,13 @@ export default function Home() {
             {/* <div className="w-full px-4 sm:px-6 md:px-8 mx-auto max-w-[90%] sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl">
               <TypewriterEffect words={words} className="py-8" />
             </div> */}
-            <div className="inline-flex flex-wrap items-center gap-2">
+            {/* <div className="inline-flex flex-wrap items-center gap-2">
               <TypewriterEffect words={words} />
+            </div> */}
+            <div className="w-full px-4 sm:px-6 md:px-8 flex justify-center">
+              <div className="max-w-3xl w-full min-h-[80px] sm:min-h-[96px] md:min-h-[120px] flex items-center justify-center">
+                <TypewriterEffect words={words} />
+              </div>
             </div>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg" className="group">
